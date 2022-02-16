@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">SHOP</string>
+    <string name="lastNameError">Please enter your lastname</string>
+    <string name="firstNameError">Please enter your firstname</string>
+    <string name="adresseError">Please enter your Adresse</string>
+    <string name="phoneError">Please enter your phone number</string>
+    <string name="emailError">Please enter your email address</string>
+    <string name="errorInvalidEmail">This email address is invalid</string>
+    <string name="passwordError">Please enter a password</string>
+    <string name="postalCodeError">Please enter a valid Postal Code</string>
+    <string name="spinner_title_categorie">Categories</string>
+    <string name="spinner_title_sub_categories">Sub_Categories</string>
+</resources>

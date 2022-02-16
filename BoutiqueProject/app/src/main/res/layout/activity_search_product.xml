@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SearchProductActivity" >
+
+    <include
+        layout="@layout/toolbar_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="2"
+        android:background="#67A1F8"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="1"
+            android:textColor="#FFFFFF"
+            android:background="#67A1F8"
+            android:textSize="17dp"
+            android:gravity="center"
+            android:text="Search product name:" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/etSearch"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#FFFFFF"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp" />
+
+            <ImageButton
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="handleBtnSearchClick"
+                android:backgroundTint="#68EA7D"
+                app:tint="#FDFDFD"
+                app:srcCompat="@drawable/search_icon" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="8"
+        android:orientation="horizontal">
+
+        <GridView
+            android:id="@+id/gvProducts"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:numColumns="2"
+            android:layout_weight="8" />
+
+        <TextView
+            android:id="@+id/tvNoItemsFound"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="30dp"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:visibility="gone"
+            android:text="No items found ..." />
+
+        <TextView
+            android:id="@+id/tvInvalidSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#DA1E1E"
+            android:textSize="18dp"
+            android:padding="30dp"
+            android:visibility="gone"
+            android:text="Please enter valid information" />
+
+        <ImageView
+            android:id="@+id/imgSearchIcon"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="150dp"
+            android:src="@drawable/search" />
+
+    </LinearLayout>
+
+</LinearLayout>
